@@ -1,0 +1,19 @@
+<!--pages/add/added.wxml-->
+<view class="c">
+
+<view class="re flex">
+<icon type="success" size="72"></icon>
+<text>{{lang.added}}</text>
+</view>
+
+<view class="path flex">
+<span>{{lang.path}}</span>
+<text>{{path}}{{id}}</text>
+<button type="primary" bindtap="copypath">{{lang.copy}}</button>
+</view>
+
+<view class="qr flex" style="display:none;">
+<image src="/image/head.png"></image>
+<button type="primary">{{lang.seve}}</button>
+</view>
+</view>

@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<halfScreen
+  bindbuttontap="del"
+  show="{{half.show}}"
+  maskClosable="true" 
+  title="{{lang.alert}}" 
+  subTitle=""
+  desc="{{lang.rushure}}"
+  tips="{{lang.cantback}}"
+  buttons="{{half.buttons}}"
+  lang='{{lang.lang}}'
+></halfScreen>
+<icon class="help" bindtap="help" type="info"></icon>
+<view class="c ug">
+	<view class="userinfo">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text>{{userInfo.nickName}}</text>
+	</view>
+	<button wx:if="{{!hasUserInfo && canIUse}}" style="margin-top:1rem;" open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo">{{lang.addBoard}}</button>
+	<button wx:else style="margin-top:1rem;" type="primary" bindtap="add">{{lang.addBoard}}</button>
+	<view class="list">
+		<block wx:for="{{list}}" wx:key="key">
+        <mp-slideview buttons="{{slideButtons}}" icon="{{true}}" data-id="{{item.id}}" data-creator="{{item.creator}}" bindtap='board' bindbuttontap="slideButtonTap">
+          <view class="slidecell">
+            {{item.name}}
+          </view>
+        </mp-slideview>
+		</block>
+	</view>
+</view>

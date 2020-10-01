@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view class="flex">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text>{{userInfo.nickName}}</text>
+	<button   style="margin-top:1rem;" open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo">授权</button>
+	
+</view>

@@ -1,0 +1,41 @@
+<!--pages/comment/comment.wxml-->
+<view class="con">
+  <view>
+    <text class="title">{{boardinfo.name}}</text>
+  </view>
+  <view class="comTop {{lang.lang}}font">
+    <text>{{lang.bestComment}}</text>
+    <text style="color:#4788dd;" bindtap="add" open-type="getUserInfo" >{{lang.write}}</text>
+  </view>
+  <view>
+  <block wx:for='{{boardinfo.list}}'  wx:key='key'>
+    <view class="item">
+      <image src="https://api.abdwhp.cn/cb/images/{{item.user}}.jpg"></image>
+      <view>
+        <view class="comms">
+          <text class="name">{{item.nickName}}</text>
+          <view bindtap="like" data-flag="{{item.like.flag}}" data-c="{{item.id}}"  data-index="{{index}}" data-count='{{item.like.count}}' class="like">
+          <image src='/image/like{{item.like.flag}}.svg'></image>
+          <text class="num">{{item.like.count}}</text>
+          </view>
+        </view>
+        <text class="text ugfont">{{item.text}}</text>
+
+        <view class="feedback">
+          <block wx:for="{{item.feedback}}" wx:key='key' wx:for-item='fb' wx:for-index='fbindex'>
+          <view class="comms2">
+            <text class="sys">{{fb.nickName}}</text>
+            <view  bindtap="like" data-flag="{{fb.like.flag}}"  data-c="{{fb.id}}" data-cell='{{fbindex}}'  data-index="{{index}}" data-count='{{fb.like.count}}' class="like">
+                <image src='/image/like{{fb.like.flag}}.svg'></image>
+               <text class="num">{{fb.like.flag}}</text>
+             </view>
+          </view>
+            <text class="ugfont">{{fb.text}}</text>
+          </block>
+        </view>
+
+      </view>
+    </view>
+  </block>
+  </view>
+</view>

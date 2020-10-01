@@ -1,0 +1,7 @@
+<!--pages/write/write.wxml-->
+<view class="c ug">
+  <textarea auto-focus="true" placeholder="{{placeholder}}" bindinput="write"/>
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo">{{submit}}</button>
+	<button wx:else type="primary" bindtap="submit">{{submit}}</button>
+	
+</view>

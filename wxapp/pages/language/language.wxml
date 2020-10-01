@@ -1,0 +1,11 @@
+<!--pages/language/language.wxml-->
+<view class="c">
+<view class="flex1">
+<text>请选择语言</text>
+<text class="ug">ئىشلىتىدىغان تىلنى تاللاڭ</text>
+</view>
+<view class="flex">
+<text class="lang" data-lang="zh" bindtap="select">中文</text>
+<text class="ug lang" data-lang="ug" bindtap="select">ئۇيغۇرچە</text>
+</view>
+</view>

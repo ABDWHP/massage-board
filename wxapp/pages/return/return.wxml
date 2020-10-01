@@ -1,0 +1,5 @@
+<!--pages/return/return.wxml-->
+<view class="c ug">
+  <textarea auto-focus="true" placeholder="{{placeholder}}" bindinput="rettext"/>
+  <button type="primary" bindtap="submit">{{return}}</button>
+</view>

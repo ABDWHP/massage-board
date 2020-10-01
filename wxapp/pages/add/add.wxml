@@ -1,0 +1,5 @@
+<!--pages/add/add.wxml-->
+<view class="c">
+  <textarea auto-focus="true" placeholder="{{placeholder1}}" bindinput="board_name"/>
+  <button type="primary" bindtap="creat">{{creat}}</button>
+</view>

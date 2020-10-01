@@ -1,0 +1,11 @@
+/* pages/return/return.wxss */
+.c{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c>textarea{
+  margin-bottom: 2rem;
+  height:3em;
+  padding:0.5rem;
+}

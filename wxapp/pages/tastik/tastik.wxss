@@ -1,0 +1,88 @@
+.c {
+  padding: 0.5rem;
+}
+.flagicon{
+  width:1.5rem;height:1.5rem;
+}
+text{
+  word-break: normal;
+  word-wrap:break-word;
+  }
+
+.item {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.item>image {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+ 
+.like {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item>view {
+  width: calc(100vw - 2.5rem - 5px);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.name {
+  color: #666;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.like>image {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.num {
+  color: #1296db;
+}
+
+.hr {
+  width: calc(100% - 2rem);
+  margin: 1rem;
+  height: 1px;
+  background: #ccc;
+}
+
+.b {
+  display: flex;
+}
+
+.res {
+  background: #02960e;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.feedback {
+  border-width:3px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 0.7rem;
+  padding:5px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback>.sys {
+  color: #666;
+  font-size: 0.8rem;
+}

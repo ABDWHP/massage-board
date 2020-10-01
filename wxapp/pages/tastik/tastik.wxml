@@ -1,0 +1,24 @@
+<!--pages/tastik/tastik.wxml-->
+<mp-actionSheet bindactiontap="btnClick" show="{{showActionsheet}}" actions="{{groups}}" title="请选择">
+</mp-actionSheet>
+<view class="c">
+	<block wx:for='{{comlist}}' wx:key='key'>
+		<view class="item">
+			<image src="https://api.abdwhp.cn/cb/images/{{item.user}}.jpg" />
+			<view>
+				<view class="like">
+					<text class="name">{{item.nickName}}</text>
+					<image class="flagicon" src="/image/flag{{item.flag}}.svg" data-id='{{item.id}}' data-user='{{item.user}}' bindtap="action"></image>
+				</view>
+				<text class="text ugfont" data-id='{{item.id}}' data-user='{{item.user}}' bindtap="action">{{item.text}}</text>
+				<block wx:for="{{item.yuan}}" wx:key='key' wx:for-item="yuan">
+					<view class="feedback">
+						<text class="sys">原留言内容：</text>
+						<text class="name">{{yuan.nickName}}</text>
+						<text class="text ugfont">{{yuan.text}}</text>
+					</view>
+				</block>
+			</view>
+		</view>
+	</block>
+</view>

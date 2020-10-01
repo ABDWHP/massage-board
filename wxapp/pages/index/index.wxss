@@ -1,0 +1,57 @@
+/**index.wxss**/
+.help{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+.userinfo{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatar{
+  width: 3rem;
+  height: 3rem;
+  border-width: 0px;
+  border-style: solid;
+  border-radius:10%;
+}
+.list{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 2rem;
+}
+.boardlist{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #333;
+  margin:0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  color: #999;
+}
+.boardlist>text{
+
+  font-size: 1rem;
+  color: #333;
+}
+.boardlist>view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.slidecell{
+  background-color: #fff;
+  border-radius: 0.7rem;
+  margin: 0.5rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 3px 3px 3px #88888888;
+  text-align: center;
+  word-break: normal;
+  word-wrap:break-word;
+}

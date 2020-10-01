@@ -1,0 +1,12 @@
+/* pages/add/add.wxss */
+.c{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c>textarea,.c>input{
+  width: calc(100% - 1rem);
+  margin-bottom: 2rem;
+  height:3em;
+  padding:0.5rem;
+}

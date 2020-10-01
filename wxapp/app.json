@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/index/index", 
+    "pages/inkas/inkas",
+    "pages/write/write",
+    "pages/language/language", 
+    "pages/tastik/tastik",
+    "pages/add/added",
+    "pages/return/return",
+    "pages/add/add",
+    "pages/help/help",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "留言板",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

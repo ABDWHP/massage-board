@@ -1,0 +1,14 @@
+/* pages/login/login.wxss */
+.flex{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatar{
+  width: 3rem;
+  height: 3rem;
+  border-width: 0px;
+  border-style: solid;
+  border-radius:10%;
+}
